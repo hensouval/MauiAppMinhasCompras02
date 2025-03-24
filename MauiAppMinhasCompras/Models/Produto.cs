@@ -34,18 +34,7 @@ namespace MauiAppMinhasCompras.Models
                 _quantidade = value;
             }
         }
-        public double Preco {
-            get => _preco;
-            set
-            {
-                if (value == 0)
-                {
-                    throw new Exception("Por favor, preencha o preço");
-                }
-
-                _preco = value;
-            }
-        }
+        public double Preco {  get; set; }
         public double Total { get => Quantidade * Preco; }
     }
 }
